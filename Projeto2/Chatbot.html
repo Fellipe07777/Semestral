@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot iUpradWeb</title>
+    <link rel="stylesheet" href="Chatbot.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepPixel ChatBot</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="chatbot-dp.css">
+</head>
+<body>
+
+        <!--button-->
+        <div id="chat-circle" class="btn btn-">
+            <div id="chat-overlay"></div>
+            <!--<i class="material-icons">android</i>-->
+            <img class="chat-círculo_bot" src="MurilinhoOficial.png">
+        </div>
+
+        <!--chat-bot-->
+        <div class="chat-box">
+            <div class="chat-box-body">
+                <!--welcome message-->
+                <div class="chat-box-bem-vindo__header">
+                    <div class="chat-box__header-text">
+                        <p3 class="chat-box-bem-vindo__nome">IUpgradWeb</p3>
+                        <span class="chat-box-alternar"><i class="material-icons">cancelar</i></span>
+                    </div>
+
+                    <div id="chat-box-bemvindo__ava">
+                        <!--<i class="material-icons">android</i>-->
+                        <img class="chat-box-bemvindo_robot" src="MurilinhoOficial.png">
+                    </div>
+                    <div class="chat-box-bemvindo__bemvindo-text">
+                        <p>Oi! Sou o Murilinho, em que posso ajudá-lo?</p>
+                    </div>
+                    <!--<div id="chat">
+
+                    </div>-->
+                </div>
+
+
+
+
+                <!--chat-bot after welcome was toggled-->
+                <div id="chat-box__wraper">
+                    <div class="chat-box-header">
+                        IUpgradWeb
+                        <span class="chat-box-alternar"><i class="material-icons">cancelar</i></span>
+                    </div>
+
+
+
+                    <div class="chat-box-overlay">
+                    </div>
+                    <div class="chat-logs">
+                        <div id="cm-msg-0" class="chat-msg bot">
+                            <span class="msg-avatar">
+                       <!--<i class="material-icons">android</i>-->
+                       <img class="chat-box-overlay_robot" src="MurilinhoOficial.png">          
+                       </span>
+                            <div class="cm-msg-text">
+                                Oi! Sou o Murilinho, em que posso ajudá-lo?
+                            </div>
+                        </div>
+                        <!--<div class="text-center"><p>loader 1</p><div class="loader1"></div></div>-->
+                        <div class="spin-container">
+                            <div class="spiner">
+                                <div aria-hidden="true"></div>
+                                <div aria-hidden="true"></div>
+                                <div aria-hidden="true"></div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!--chat-log-->
+                </div>
+
+            </div>
+            <div class="chat-input-box">
+                <form class="chat-input__form">
+                    <input type="text" class="chat-input__text" id="chat-input__text" placeholder="Envie sua pergunta..." />
+                    <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">E</i></button>
+                </form>
+                ChatBot da IUpgradWeb
+            </div>
+        </div>
+    </div>
+    <!-- end live-chat -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--jquery ui-->
+    <!--<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>-->
+
+    
+    <script src="Chatbot.js"></script>
+</body>
+</html>

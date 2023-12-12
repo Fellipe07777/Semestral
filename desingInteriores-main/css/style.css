@@ -1,0 +1,951 @@
+@font-face {
+    font-family:'monteserrat-reg' ;
+    src: url("../fontes/MontserratAlternates-Regular.ttf");
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    width: 100%;
+    font-size: 16px;
+    
+}
+
+.container{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.ghost{
+    height: 100px;
+}
+.clear{
+    clear: both;
+}
+
+header{
+    width: 100%;
+    display: grid;
+    grid-template: "log" "menu";
+    grid-template-areas: 100% 100%;
+    text-align: center;
+    
+ 
+
+}
+
+.logo{
+    grid-area:log;
+    margin: 0 auto;
+    box-shadow: rgba(119, 177, 32, 0.899) 2px 2px 2px;
+    position:relative;
+    top:0;
+
+    
+
+
+}
+
+.cabecalho{
+    max-width: 100%;
+    width: 100%;
+    height: 210px;
+    background-color: greenyellow;
+    box-shadow: rgba(119, 177, 32, 0.899) 2px 2px 2px;
+    position: absolute;
+    z-index: 99999;
+   
+
+}
+
+.cabecalho_scroll{
+    height: 80px;
+
+}
+
+.menu{
+    grid-area: menu;
+    /* border: solid 1px; */
+    margin-top: 5em;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'monteserrat-reg';
+}
+
+
+.menu-item{
+    text-decoration: none;
+    color:rgb(26, 31, 25);
+    font-size: 1.2em;
+    padding: 0 20px;
+    padding-bottom: 1em;
+     
+
+}
+
+.menu-item:hover{
+    border-bottom: solid 2px rgb(26, 31, 25);
+    /* background-color: rgb(26, 31, 25,0.3); */
+    /* box-shadow: rgba(119, 177, 32, 0.899) 2px 2px 2px;  */
+    color: greenyellow;
+    text-shadow: rgba(64, 95, 19, 0.899) 1px 1px 1px; 
+    
+    
+}
+
+.sec-title{
+    width: 100%;
+    background-image: url('../img/sala.jpg');
+    background-size: cover;
+    background-repeat:no-repeat ;
+    background-position: 100%;
+    height: 100vh;
+    background-color: rgba(196, 215, 225, 0.61);
+    text-align: center;
+    z-index: 9;
+}
+
+.title{
+    width: 25%;
+    /* border: solid red; */
+    position: relative;
+    vertical-align: middle;
+    font-family: 'monteserrat-reg'; 
+    top:20%;
+    font-size: 3em;
+    color: rgb(45, 47, 43);
+    
+
+    
+}
+
+/* pagina home */
+main{
+    width: 100%;
+    background-color: rgba(196, 215, 225, 0.01);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+
+.main-txt hr,.cabecalho-main hr{
+    background-color: greenyellow;
+    height: 1.3px;
+    border-color: black solid;
+}
+
+.cabecalho-main{
+    text-align: center;
+    margin-top: 10%;
+    box-shadow: rgba(228, 253, 193, 0.602) -2px -2px 2px 2px;
+
+}
+
+
+
+main .main-txt{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-txt p{
+    padding: 2% 4%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-family: 'monteserrat-reg';
+    font-size: 2em;
+    padding: 5% 0;
+    
+
+}
+
+
+
+/* section services em main-Home */
+.services{
+    display: inline-flex;
+    padding: 5% 5%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+    
+}
+
+.serv{
+    padding: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid rgba(153, 153, 153, 0.623) 1px;
+    border-radius: 5px;
+    margin: 2%;
+
+}
+
+.serv h4{
+    font-size: 1.2em;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    color:rgb(45, 47, 43);
+}
+
+.serv p{
+    padding: 5%;
+    text-align: justify;
+}
+
+.serv img{
+    width: 100px;
+    
+}
+
+.serv img:hover{
+    background-color: greenyellow;
+    border-radius: 50px;
+    width: 100px;
+}
+
+
+.sofisticacao{
+    width: 100%;
+
+  
+    
+}
+
+.sofisticacao img{
+    width: 50%;
+}
+
+.sofit{
+    width: 50%;
+    /* border: solid red; */
+    float: right;
+    font-family:Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center;
+    padding-top: 20%;
+    
+}
+
+.sofit h3{
+    font-family:"monteserrat-reg";
+    font-size: 1.5em;
+    width: 100%; 
+    /* top:40em; */
+}
+
+.sofit p{
+    width: 100%; 
+    padding: 10%;
+}
+
+.sofit button{
+    width: 30% ;
+    color: greenyellow;
+    background-color: transparent;
+    border:solid greenyellow;
+    padding: 10px 40px;
+    font-family: 'monteserrat-reg';
+}    
+/* fim da pagina home */
+
+/* pagina sobre */
+
+.sec-sobre{
+    max-width: 1200px;
+    margin-top: 10%;
+    height:900px ;
+    
+}
+
+
+
+.sobre{
+    width: 80%;
+    padding: 2%;
+    position: relative;
+    bottom: 400px;
+    text-align: justify;
+    background-color: rgba(240, 248, 255, 0.606);
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+
+.sobre h3{
+    font-family: "monteserrat-reg";
+    font-size: 3em;
+}
+
+.sobre p{
+    padding-bottom: 5%;
+}
+
+
+
+/* Pagina Seviços */
+
+.sec-equipe{
+    width: 100%;
+    text-align: center;
+    padding: 2% 5%;
+    position:relative;
+    height: 600px;
+    border-radius: 5px;
+    background-color: greenyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: rgba(119, 177, 32, 0.899) 2px 2px 2px;
+
+}
+
+.equipe{
+    position: relative;
+    margin: auto;
+    
+    
+   
+   
+}
+
+.equipe img{
+    position: relative;
+    width: 100%;
+    max-width: 90%;
+    border-radius: 5px;
+    box-shadow: rgba(119, 177, 32, 0.899) 2px 2px 2px;
+
+}
+
+.equipe-txt{
+    position: absolute;
+  
+    width: 70%;
+    margin: auto;
+    top:9em; 
+    padding: 5%;
+    background-color: rgba(240, 248, 255, 0.451);
+    text-align: justify;
+}
+
+.equipe-txt h4{
+    font-size: 1.4em;
+    padding: 5%;
+}
+
+
+
+
+
+.projetos{
+   width: 100%;
+   background-color: rgba(119, 177, 32, 0.033);
+   
+   margin-top: 5%;
+   margin-bottom: 5%;
+   font-family: Arial, Helvetica, sans-serif;
+  
+   
+   
+}
+
+
+.projetos section{
+    height: 600px;
+    position: relative; 
+
+}
+
+.proj:nth-child(2){
+    /* background-color: blue; */
+    float: right;
+    text-align: center;
+    margin-top: -100px;
+    /* margin-bottom: 50px; */
+    
+    
+
+}
+.proj:nth-child(odd){
+    clear: both; 
+}
+
+/* .proj-residencial{
+    position: relative;
+    /* top:2em; 
+    padding: 0%;
+} */
+
+
+
+
+.proj{
+    
+    width: 90%;
+    height: fit-content;
+    clear: both;
+    /* border: solid red; */
+    
+}
+
+.proj-txt{
+
+    width: 50%;
+    position: relative;
+    text-align: justify;
+    background-color: rgba(240, 248, 255, 0.606);
+    float: right;
+    top:-10em;
+    padding: 5%;
+    box-shadow: rgba(190, 197, 203, 0.606) 2px 2px 2px;
+
+
+}
+
+.proj-txt h4{
+    padding: 5% 0;
+    font-size: 1.3em;
+}
+
+.proj img{
+    width: 70%;
+}
+/* fim da pagina serviços */
+
+
+/* inicio pagina contato */
+
+.sec-formulario{
+    width: 100%;
+    background-color: greenyellow;
+    border-radius: 5px ;
+    padding: 5%;
+    height: 500px;
+    
+}
+
+form{
+    width:40%;
+    float: left;
+    margin-left: 5%;
+  
+}
+
+.input-form{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-form{
+    background-color: rgb(26, 31, 25);
+    color: white;
+    padding:  5px 10px;
+    width: 100px;
+    border-radius: 5px;
+    border:none;
+    font-family: 'monteserrat-reg';
+    
+
+}
+
+iframe{
+    width: 50%;
+    float:right;
+    border-radius: 5px;
+}
+
+
+/* Pagina galeria */
+.galeria{
+    display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 200px;
+    padding-bottom: 5%;
+
+}
+
+.gal{
+   flex-grow: 3;
+    
+    
+     
+    
+}
+
+.gal a img{
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer{
+    height: 290px;
+    width: 100%;
+    background-color: rgb(26, 31, 25);
+    color: white;
+    padding-bottom: 5%;
+}
+
+footer .container{
+    padding-top: 5%;
+    
+    display:grid;
+    grid-template: "links ... ende... redes...subs";
+    grid-template-areas: 10% 20% 50%;
+}
+
+h4{
+    font-family: 'monteserrat-reg';
+}
+
+footer ul li{
+    list-style: none;
+}
+
+.sec-links{
+    grid-area: links;
+    /* width: 33%; */
+    /* float:right; */
+
+}
+
+.links{
+    color: white;
+    font-family: 'monteserrat-reg';
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover{
+    color: greenyellow;
+}
+
+.endereco{
+    grid-area: ende;
+    font-family: 'monteserrat-reg';
+    /* float: right; */
+}
+
+.endereco p{
+    line-height: 2em;
+
+}
+
+.endereco span{
+    font-weight: 700;
+    color: greenyellow;
+}
+
+.sec-redes{
+    grid-area: redes;
+}
+.social_icon{
+    display: inline-flex;
+    
+}
+.social_icon i{
+    padding: 20px;
+    width: 50px;
+    color:greenyellow;
+}
+
+.subscribe{
+    grid-area: subs;
+}
+
+.subscribe input[type="email"]{
+    padding: 2% 0;
+    border-radius: 5px;
+    border: none;
+    padding-left: 12px;
+
+}
+
+.subscribe button{
+    padding: 2% 1%;
+    border-radius: 3px;
+    border: none;
+    background-color: greenyellow;
+    font-family: "monteserrat-reg";
+
+   
+
+}
+
+.copy{
+    text-align: center;
+    padding: 2% 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: greenyellow;
+}
+
+
+
+/* media querys */
+
+@media screen and (max-width:650px ){
+   
+    /* home */
+    .cabecalho{
+        position: relative;
+        width: 100%;
+    
+        
+    }
+    .cabecalho-main{
+        width: 100%;
+    }
+    
+    .logo{
+        position: relative;
+        float: left;
+
+
+    }
+
+
+    .menu{
+        width: 100%;
+        display: none;
+        text-align: center;
+        position: absolute;
+        bottom:1px;
+        background-color: greenyellow;
+        left:0;
+        transition: all 10s ease-out;
+        right: -300px;
+
+    }
+
+    .menu-item{
+        width: 80%;
+        /* border:solid;  */
+        padding: 2%;
+        display: block;
+    }
+
+    .menu-item:hover{
+        background-color: white;
+        border: none;
+        width: 80%;
+        color: greenyellow;
+    }
+
+    .menu-fechar{
+        width: 100%;
+        display: none;
+        text-align: center;
+        position: absolute;
+        bottom:-1px;
+        background-color: greenyellow;
+        left:0;
+        transition: all 10s ease-out;
+        display:block;
+        right: 300px;
+        padding-top: 10px;
+    }
+
+    .btn-abrir{
+        display: block;
+        background-color: black;
+        height: 5px;
+        width: 45px;
+        float: right;
+        position:relative;
+        top:50px;
+        border-radius: 5px;
+        cursor: pointer;
+        
+        
+    }
+
+    .btn-abrir::after{
+        content: '';
+        display: block;
+        background-color: black;
+        height: 5px;
+        width: 45px;
+        float: right;
+        position:relative;
+        top:5px;
+        border-radius: 5px;
+
+    }
+
+    .btn-abrir::before{
+        content: '';
+        display: block;
+        background-color: black;
+        height: 5px;
+        width: 45px;
+        float: right;
+        position:relative;
+        top:-10px;
+        border-radius: 5px;
+
+    }
+
+    .btn-fechar{
+        display: block;
+        background-color: black;
+        height: 5px;
+        width: 45px;
+        float: right;
+        position:relative;
+        top:50px;
+        transform: rotate(30deg);
+        border-radius: 5px;
+
+    }
+
+    .btn-fechar::after{
+        content: '';
+        display: block;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        float: right;
+        position:absolute;
+        top:0px;
+        transform: rotateY(180deg);
+        transform: rotate(120deg);
+        border-radius: 5px;
+
+    }
+
+    .sec-title{
+        position: relative;
+        margin-top: 0;
+        bottom:70px;
+      
+    }
+
+    .sofisticacao{
+        height: 900px;
+        text-align: center;
+    }
+
+    .sofisticacao img{
+        width: 70%;
+        margin: auto;
+        padding-top: 10%;
+    }
+
+    .sofit{
+        width: 100%;
+        
+    }
+
+    .sofit p{
+        text-align: justify;
+    }
+
+    p{ font-size: 1.1em;
+        color:#333;
+       
+    }
+
+
+
+
+
+   
+
+
+    .services{
+        display: block;
+    }
+
+    .ghost{
+        display:none;
+    }
+
+    footer{
+        display:block;
+        height: max-content;
+        margin-top: 5%;
+        
+    }
+
+    footer .container{
+        display: block; 
+    }
+
+    .links{
+        width: 100%;
+    }
+
+    .endereco{
+        padding-top: 20px;
+        color:white;
+    }
+
+    .endereco p{
+        color: white;
+    }
+
+
+    /* sobre */
+
+    .main-sobre{
+        width: 100%;
+    }
+    .sec-sobre{
+        text-align: center;
+    }
+    .sec-sobre img{
+        width: 100%;
+    }
+    .sobre{
+        width: 100%;
+        position: relative;
+        bottom:15em;
+        font-size: 15px;
+    }
+    .sobre h1{
+        font-size: 1em;
+    }
+
+
+    /* servicos */
+
+    .equipe-txt{
+        
+       font-size: 14px;
+        width: 100%;
+        margin: auto;
+        top:20em; 
+        padding: 5%;
+        background-color: rgba(240, 248, 255, 0.451);
+        text-align: justify;
+    }
+
+
+    .proj-txt{
+
+        width: 100%;
+        text-align: justify;
+        background-color: rgba(240, 248, 255, 0.606);
+        padding: 5%;
+        display: block;
+        position: absolute;
+        top:20em;
+       
+      
+    
+    }
+
+   
+
+
+    
+    .projetos{
+        width: 100%;
+        background-color:white;
+        position: relative;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-family: Arial, Helvetica, sans-serif;
+    
+        
+        
+    }
+
+    /* contato */
+
+    .sec-formulario{
+        width: 100%;
+        display: block;
+        height: 700px;
+        text-align: center;
+    }
+
+    form{
+        width: 90%;
+    }
+
+    iframe{
+        width: 100%;
+        height: 300px;
+        padding-top: 5%;
+        margin:0 auto;
+        border-radius: 10px;
+       
+        /* display: block; */
+        background-color: greenyellow;
+    }
+    
+    
+    .projetos section{
+        height: 600px;
+        position: relative; 
+       
+    
+    }
+    
+    
+    
+    .proj{
+        
+        width: 100%;
+        margin-bottom:5px;   
+        height: 100px;
+        
+    }
+    .proj:nth-child(2){
+        
+        text-align: center;
+        margin-top: 10px;
+        
+        
+        
+    
+    }
+
+    
+    .proj-txt h4{
+        padding: 5% 0;
+        font-size: 1.3em;
+    }
+    
+    .proj img{
+        width: 100%;
+    }
+
+
+  
+}
